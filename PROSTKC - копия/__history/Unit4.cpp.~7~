@@ -1,0 +1,53 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+#include "Unit4.h"
+#include "GraphSettings.cpp"
+
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm4 *Form4;
+extern GraphSettings gs;
+//---------------------------------------------------------------------------
+__fastcall TForm4::TForm4(TComponent* Owner)
+	: TForm(Owner)
+{
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm4::btnAcceptSettingClick(TObject *Sender)
+{
+
+
+ //GraphSettings gsUpdated = GraphSettings(true,1,5);
+
+
+ this->Visible = false;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm4::btnCancelSettingsClick(TObject *Sender)
+{
+  this->Visible = false;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm4::FormActivate(TObject *Sender)
+{
+   tbXStep->Text= FloatToStr(gs.step);
+   etDelta->Text = FloatToStr(gs.delta);
+
+   if(gs.combineType == true)
+   {
+	rbRu->Checked = true;
+
+
+   } else
+   {
+	rbKa->Checked=true;
+   }
+}
+
+//---------------------------------------------------------------------------
+

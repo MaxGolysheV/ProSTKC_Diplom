@@ -1,0 +1,29 @@
+#ifndef _STRUKTS
+#define _STRUKTS
+#include "XKY_HBO_5_0.h"
+
+struct Floats //структура для сохранения временных данных КА для оптимизации отрисовки графиков без повторных расчетов
+{
+  float tn1;
+  float tk1;
+  float tn2;
+  float tk2;
+  float tn3;
+  float tk3;
+  float tn4;
+  float tk4;
+  float tab;
+};
+Floats fka[10];
+
+//МОЯ СТРУКТУРА КА
+struct Kosmo
+{
+	public:
+	int name;
+	double r[6];//вектор  время в секундах
+	KU_TimeDATA ts;
+	int ru[5]; // сутки и параметры отрезков времени
+};
+Kosmo ka[30];
+#endif

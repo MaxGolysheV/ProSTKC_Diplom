@@ -1,0 +1,64 @@
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#pragma hdrstop
+#include "Unit1.h"
+#include "Strukts.h"
+//---------------------------------------------------------------------------
+//#pragma package(smart_init)
+#include <iostream>
+
+extern int maxKa;//текущее количество аппаратов в фале. Оригинальная переменная находится в Unit1.cpp(главная форма)
+
+void read(AnsiString path,TForm1 *form1)
+{
+	FILE *data;
+	int ints[3][3];
+	fopen_s(&data,path.c_str(),"r");
+
+	fscanf(data,"%d,%d,%d",&ints[0][0],&ints[0][1],&ints[0][2]);
+	fscanf(data,"%d,%d,%d",&ints[1][0],&ints[1][1],&ints[1][2]);
+	fscanf(data,"%d,%d,%d",&ints[2][0],&ints[2][1],&ints[2][2]);
+
+	fclose(data);
+}
+
+void readEOF(AnsiString path,TForm1 *form1, Kosmo ka[])
+{
+	FILE *data;
+	fopen_s(&data,path.c_str(),"r");
+	int row=0;
+
+	while
+	(
+	fscanf(data,
+	"%lf,%lf,%lf,%lf,%lf,%lf,%d,%lf,%d,%d,%d,%d,%d",
+	&ka[row].r[0],&ka[row].r[1],&ka[row].r[2],&ka[row].r[3],&ka[row].r[4],&ka[row].r[5],
+	&ka[row].ts.d,&ka[row].ts.s,
+	&ka[row].ru[0],&ka[row].ru[1],&ka[row].ru[2],&ka[row].ru[3],&ka[row].ru[4])!=EOF
+	)
+	{
+	  ka[row].name=row+1;
+	  form1->kaList->Items->Add("KA"+IntToStr(ka[row].name));
+	  row++;
+	}
+	maxKa=row;
+	fclose(data);
+
+
+}
+
+void writeCsv(AnsiString path,Kosmo ka[])
+{
+	FILE *data;
+	fopen_s(&data,path.c_str(),"w");
+
+	for(int i =0; i<maxKa; i++)
+	{
+		fprintf(data,
+		"%10.16e,%10.16e,%10.16e,%10.16e,%10.16e,%10.16e,%d,%10.16f,%d,%d,%d,%d,%d\n",
+		ka[i].r[0],ka[i].r[1],ka[i].r[2],ka[i].r[3],ka[i].r[4],ka[i].r[5],
+		ka[i].ts.d,ka[i].ts.s,
+		ka[i].ru[0],ka[i].ru[1],ka[i].ru[2],ka[i].ru[3],ka[i].ru[4]);
+	}
+	fclose(data);
+}

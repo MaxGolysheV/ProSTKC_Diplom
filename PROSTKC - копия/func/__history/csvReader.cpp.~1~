@@ -1,0 +1,73 @@
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#pragma hdrstop
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+//#pragma package(smart_init)
+#include <iostream>
+
+
+
+void read(AnsiString path,TForm1 *form1)
+{
+	FILE *data;
+	int ints[3][3];
+	fopen_s(&data,path.c_str(),"r");
+
+	fscanf(data,"%d,%d,%d",&ints[0][0],&ints[0][1],&ints[0][2]);
+	fscanf(data,"%d,%d,%d",&ints[1][0],&ints[1][1],&ints[1][2]);
+	fscanf(data,"%d,%d,%d",&ints[2][0],&ints[2][1],&ints[2][2]);
+
+	for(int i = 0; i<3;i++)
+	{
+		form1->memo1->Lines->Add(IntToStr(ints[0][i]));
+	}
+	for(int i = 0; i<3;i++)
+	{
+		form1->memo1->Lines->Add(IntToStr(ints[1][i]));
+	}
+	for(int i = 0; i<3;i++)
+	{
+		form1->memo1->Lines->Add(IntToStr(ints[2][i]));
+	}
+}
+
+void readEOF(AnsiString path,TForm1 *form1)
+{
+	FILE *data;
+	int ints[3][3];
+	fopen_s(&data,path.c_str(),"r");
+
+	int row=0;
+
+	while(fscanf(data,"%d,%d,%d",&ints[row][0],&ints[row][1],&ints[row][2])!=EOF)
+	{
+	  row++;
+	}
+
+
+
+	for(int i = 0; i<3;i++)
+	{
+		form1->memo1->Lines->Add(IntToStr(ints[0][i]));
+	}
+	for(int i = 0; i<3;i++)
+	{
+		form1->memo1->Lines->Add(IntToStr(ints[1][i]));
+	}
+	for(int i = 0; i<3;i++)
+	{
+		form1->memo1->Lines->Add(IntToStr(ints[2][i]));
+	}
+}
+
+void write(AnsiString path)
+{
+   FILE *data;
+   fopen_s(&data,path.c_str(),"w");
+
+   fprintf(data,"%d,%d,%d \n",1,1,1);
+   fprintf(data,"%d,%d,%d \n",2,2,2);
+   fprintf(data,"%d,%d,%d",3,3,3);
+   fclose(data);
+}

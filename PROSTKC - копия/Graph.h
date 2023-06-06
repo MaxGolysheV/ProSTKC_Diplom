@@ -1,0 +1,60 @@
+//---------------------------------------------------------------------------
+
+#ifndef GraphH
+#define GraphH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <Vcl.ExtDlgs.hpp>
+#include <Vcl.Mask.hpp>
+//---------------------------------------------------------------------------
+class TForm2 : public TForm
+{
+__published:	// IDE-managed Components
+	TImage *img1;
+	TEdit *et1;
+	TButton *dayForwardBtn;
+	TButton *dayBackBtn;
+	TLabel *Label1;
+	TLabeledEdit *et2;
+	TSavePictureDialog *spd1;
+	TButton *btnSave;
+	TEdit *edtZoom;
+	TButton *btn2;
+	TButton *btn1;
+	TLabel *Label2;
+	TScrollBar *sb1;
+	TImage *img2;
+	void __fastcall FormMouseWheelDown(TObject *Sender, TShiftState Shift, TPoint &MousePos,
+          bool &Handled);
+	void __fastcall FormMouseWheelUp(TObject *Sender, TShiftState Shift, TPoint &MousePos,
+          bool &Handled);
+	void __fastcall dayForwardBtnClick(TObject *Sender);
+	void __fastcall dayBackBtnClick(TObject *Sender);
+	void __fastcall btnSaveClick(TObject *Sender);
+	void __fastcall spd1CanClose(TObject *Sender, bool &CanClose);
+	void __fastcall ud1Changing(TObject *Sender, bool &AllowChange);
+	void __fastcall btn1Click(TObject *Sender);
+	void __fastcall btn2Click(TObject *Sender);
+	void __fastcall sb1Change(TObject *Sender);
+	void __fastcall FormActivate(TObject *Sender);
+	void __fastcall img1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y);
+	void __fastcall img1MouseMove(TObject *Sender, TShiftState Shift, int X, int Y);
+	void __fastcall checkMouseClick(double tn, double tk, double xn,double xk, double y0, double y1, int X, int Y, int i);
+	void __fastcall graphMouseClick(double tn, double tk, double xn,double xk, double y0, double y1, int X, int Y, int i);
+
+
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm2(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm2 *Form2;
+//---------------------------------------------------------------------------
+#endif

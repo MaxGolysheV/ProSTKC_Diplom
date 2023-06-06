@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.928,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\sysconst.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.549,D:\PROSTKC - копия\Graph2.dfm=D:\PROSTKC - копия\Unit3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.549,D:\PROSTKC - копия\Graph2.h=D:\PROSTKC - копия\Unit3.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.877,=D:\PROSTKC - копия\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.964,=D:\PROSTKC - копия\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.983,D:\PROSTKC - копия\RGB_Randomize.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.203,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.221,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_5_0.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.026,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.751,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.140,=D:\PROSTKC - копия\RGB_Randomize.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.084,=D:\PROSTKC - копия\func\GraphSettings.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.176,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\coil.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.231,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.183,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\coil.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.863,=D:\PROSTKC - копия\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.195,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_0.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.363,=D:\PROSTKC - копия\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.547,D:\PROSTKC - копия\Unit2.cpp=D:\PROSTKC - копия\Graph.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.189,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\proc1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.547,D:\PROSTKC - копия\Unit2.dfm=D:\PROSTKC - копия\Graph.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.256,=D:\PROSTKC - копия\func\FuncClass.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.547,D:\PROSTKC - копия\Unit2.h=D:\PROSTKC - копия\Graph.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.156,=C:\Users\User\Desktop\PROSTKC - копия\func\csvReader.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.927,=D:\PROSTKC - копия\Unit5.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.210,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.248,=C:\Users\User\Desktop\PROSTKC - копия\Unit6.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.212,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.886,=D:\PROSTKC - копия\Untitled3.css</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.597,=D:\PROSTKC - копия\Untitled2.css</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.231,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.042,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.359,=D:\PROSTKC - копия\Untitled1.css</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.201,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.372,=D:\PROSTKC - копия\func\Strukts.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.216,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_6.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.115,=D:\PROSTKC - копия\func\DrawClass1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.187,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\proc1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.549,D:\PROSTKC - копия\Graph2.cpp=D:\PROSTKC - копия\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.231,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.218,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_6.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.193,=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ALG\XKY_HBO_4_0.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.629,=D:\PROSTKC - копия\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.808,D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\Project1PCH1.h=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ProSTKCPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.820,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\W_PROJECT\FOR_S\Pro_Stat\PROSTKC\ProSTKC.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

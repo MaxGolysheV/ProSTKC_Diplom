@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <stdarg.h>
+#include <math.h>
+#include <vcl.h>
+
+
+#include "Unit1.h"
+#include "proc1.h"
+#include "XKY_HBO_4_1.h"
+#include "XKY_HBO_4_2.h"
+#include "XKY_HBO_4_6.h"
+#include "coil.h"
+#include "Graph.h"
+
+#include "XKY_HBO_5_0.h"
+#include "Strukts.h"
+#include "Graph.h"
+TColor trans;
+ void ClearSelection(TImage *img)
+ {
+
+	int width = img->Width;
+	int heigth = img->Height;
+	TBitmap *bitmap = new TBitmap;
+	bitmap->Transparent=true;
+	bitmap->TransparentColor = bitmap->Canvas->Pixels[width][heigth];
+	bitmap->TransparentMode = tmAuto;
+	img->Canvas->Draw(0,0,bitmap);
+
+ }
+ void DrawSelection(TImage *img, double x1,double x2, double y1, double y2)
+ {
+	ClearSelection(img);
+	img->Canvas->Pen->Color = clRed;
+	img->Canvas->Rectangle(x1,y1,x2,y2);
+ }
+

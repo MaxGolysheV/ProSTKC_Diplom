@@ -1,0 +1,39 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4B9E2574-9353-4EFF-A68A-818C3460195E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ProSTKC.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\Users\User\Desktop\PROSTKC\ProSTKC.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProSTKC">
+        <MSBuild Projects="C:\Users\User\Desktop\PROSTKC\ProSTKC.cbproj"/>
+    </Target>
+    <Target Name="ProSTKC:Clean">
+        <MSBuild Projects="C:\Users\User\Desktop\PROSTKC\ProSTKC.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProSTKC:Make">
+        <MSBuild Projects="C:\Users\User\Desktop\PROSTKC\ProSTKC.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProSTKC;ProSTKC"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProSTKC:Clean;ProSTKC:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProSTKC:Make;ProSTKC:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
